@@ -3,14 +3,11 @@
 // your code goes here
 fscanf(STDIN, "%d", $t);
 if( $t>=1 && $t<=100){
-    for($i = 0 ; $i < $t ; $i++){
-        fscanf(STDIN, "%d %d", $x, $y);
-        if( $x>=1 && $x<=100  && $y>=1 && $y<=100){
-            if($x>=$y){
-                echo 'YES'.PHP_EOL;
-            }else{
-                echo 'NO'.PHP_EOL;
-            }
+    $tc= range(1,$t);
+    foreach($tc as $k){
+        fscanf(STDIN, "%d %d", $n, $m);
+        if( $n>=1 && $n<=100  && $m>=1 && $m<=100){
+            echo $n*$m.PHP_EOL;
         }
     }
 }
