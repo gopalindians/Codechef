@@ -1,0 +1,2 @@
+OCTOBER LONG 2022 DIVISION 4 (RATED)
+https://www.codechef.com/OCT221D
