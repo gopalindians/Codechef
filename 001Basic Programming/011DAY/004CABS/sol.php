@@ -2,10 +2,15 @@
 
 // your code goes here
 fscanf(STDIN, "%d", $t);
-if( $t>=1 && $t<=2000)
-    $c = range(1,$t);
-    foreach($c as $k){
-        fscanf(STDIN, "%d %d", $n, $k);
-        if($n>=1 && $n<=100 && $k>=0 && $k<=$n)
-            echo $n-$k.PHP_EOL;
+if($t>=1 && $t<=100)
+    for($i = 0 ; $i < $t ; $i++){
+        fscanf(STDIN, "%d %d", $x,$y);
+        $max = max($x,$y);
+        $min = min($x,$y);
+        if($x==$y)
+            echo 'ANY'.PHP_EOL;
+        else if($max==$x)
+            echo 'SECOND'.PHP_EOL;
+        else if($max==$y)
+            echo 'FIRST'.PHP_EOL;
     }
